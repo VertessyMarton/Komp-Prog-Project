@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csatlakozási lehetőségek</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src = "script.js"></script>
+</head>
+<body class="body2">
+<div class="test col-lg-12 col-md-8 col-sm-6 col-xs-2 col-2">
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark navbar-dark bg-primary">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link  " href="index.html">Kidolgozott tétel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="sulyaranyok.html">Súlyarányok</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="ertekelolap.html">Értékelőlap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="ertekelo">Értékelőlap<h1><br>
+        <h2>Szóbeli vizsgarész értékelési útmutató</h2>
+        <h3>Tartalom</h3>
+        
+        <p>fogalmak ismerete</p>
+        <ul>
+            <li>nem megfelelő 0 pont</li>
+            <li>a fogalmak ismeretében kisebb tévedések fordulnak elő 1 pont</li>
+            <li>megfelelő 2 pont</li>
+        </ul>
+
+        <p>Fogalmak definiálása, alkalmazása </p>
+        <ul>
+            <li>nem megfelelő 0 pont</li>
+            <li>alkalmazásában apró tévedések, hibák fordulnak elő 1 pont</li>
+            <li>teljes körű fogalom meghatározás és alkalmazás 2 pont</li>
+        </ul>
+
+        <p>Tartalmi kifejtés, elvek folyamatok ismerete </p>
+        <ul>
+            <li>a témakör egy pontját sem tudja kifejteni 0 pont</li>
+            <li>a témakör egy-két pontját tudja csak kifejteni 2 pont</li>
+            <li>a tétel egy pontja kivételével kifejti azt, de hiányosan 4 pont</li>
+            <li>a témakör minden pontját kifejti kisebb hiányossággal 6 pont</li>
+            <li>a témakör minden pontját jól kifejti 8 pont</li>
+        </ul>
+
+        <p>Elvek, folyamatok alkalmazása </p>
+        <ul>
+            <li>a tételhez tartozó elveket, folyamatokat nem tudja alkalmazni 0 pont</li>
+            <li>a tételhez tartozó elveket, folyamatokat csak részben tudja alkalmazni 1 pont</li>
+            <li>a tételhez tartozó elveket, folyamatokat tudja alkalmazni 2 pont</li>
+        </ul>
+
+        <p>Összefüggések értelmezése </p>
+        <ul>
+            <li>nem a megadott témáról beszél 0 pont</li>
+            <li>csak a témakör periférikus elemeire tér ki 1 pont</li>
+            <li>a témakör lényeges elemeit tárgyalja, de az összefüggések hiányosak pont2 </li>
+            <li>a tárgyalt témakörben az összefüggéseket jól látja 4 pont</li>
+        </ul>
+
+        <h3>Felépités</h3>
+        <p>időbeosztás</p>
+        <ul>
+            <li>jelentős időzavarba kerül, elvész a részletekben 0 pont</li>
+            <li>feleletével kicsúszik az időkeretből, vagy túlságosan besűríti mondanivalóját 1 </li>
+            <li>látja a súlypontokat, de nem fejti ki eléggé a mondanivalóját 2 pont</li>
+            <li>logikusan felépített felelet, kihasználja az időkeretet 3 pont</li>
+        </ul>
+
+        <p>felépítettség</p>
+        <ul>
+            <li>nincs érdemi felelet 0 pont</li>
+            <li>a felelet zavaros, nem felépített 1 pont</li>
+            <li>a felelet felépített, de egy-két gondolati törés van benn 2 pont</li>
+            <li>a felelet jól felépített 3 pont</li>
+        </ul>
+
+        <h3>Előadás, szaknyelv</h3>
+        <p>Előadás</p>
+        <ul>
+            <li>nincs érdemi felelet 0 pont</li>
+            <li>pontatlan, zavaros előadásmód 1 pont</li>
+            <li>kisebb bizonytalansággal történő előadásmód 2 pont</li>
+            <li>egyértelmű, követhető előadásmód 3 pont</li>
+        </ul>
+
+        <p>szaknyelv</p>
+        <ul>
+            <li>felületes, pontatlan, szakszerűtlen 0 pont</li>
+            <li>pontatlan, de jelzésre javít 1 pont</li>
+            <li>pontatlan, de önállóan javít 2 pont</li>
+            <li>pontos, szakszer 3 pont</li>
+        </ul>
+        <div class="erettsegi">
+            <form id="erettsegiteszt" onsubmit="ErettsegiTeszt()" name="teszt" method="get">
+                <label for="szobeli">Szóbeli pontszám:</label><br>
+                <input type="text" id="szobeli" name="szobeli" value=""><br>
+                <label for="irasbeli">Írásbeli pontszám:</label><br>
+                <input type="text" id="irasbeli" name="irasbeli" value=""><br><br>
+                <input type="submit" value="Teszt">
+              </form> 
+        </div>
+    </body>
+</html>
